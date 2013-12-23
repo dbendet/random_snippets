@@ -15,7 +15,7 @@ data = fetch(rs, n=-1)
 
 library(RJDBC)
 
-drv <- JDBC("com.vertica.jdbc.Driver","/Users/dbendet/Documents/vertica-jdk5-6.0.0-0.jar")
+drv <- JDBC("com.vertica.jdbc.Driver","/path/to/vertica-jdk5-6.0.0-0.jar")
 
 conn <- dbConnect(drv, "jdbc:vertica://vertica-prod.bla.bla.com", database = "bla", user="bla", password="bla", port="bla")
 
