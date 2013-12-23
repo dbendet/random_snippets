@@ -1,4 +1,3 @@
-
 # sync with vertica
 
 vertica_connect <- function(user, password) {
@@ -10,7 +9,7 @@ vertica_connect <- function(user, password) {
 
     drv <- JDBC(a, b)
 
-    conn <- dbConnect(drv, "jdbc:vertica://vertica-prod.bla.bla.com", database = "bla", user=user, password=password, port="bla")
+    conn <- dbConnect(drv, "bla", database = "bla", user=user, password=password, port="bla")
 }
 
 # query vertica to df
